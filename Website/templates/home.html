@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="/static/css/navbar_color.css" rel="stylesheet">
+  <link href="/static/css/ani_umesh.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Aptos', sans-serif;
+      background-color: orange;
+    }
+  </style>
+  
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg fixed-top" style="height: 70px;">
+  <div class="container justify-content-center">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">RESUME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">SKILLS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">PROJECT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="{% url 'resource' %}" style="color: black; font-weight: bold; ; margin-left: 15px; margin-right: 15px; text-decoration: none;">RESSOURCE</a> <!-- Custom styles for "Resource" link with margin-right -->
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<!-- Header (Home Section) -->
+<header id="home" class="jumbotron jumbotron-fluid text-center mt-5" style="background-color: #ffffff;">
+  <div class="container">
+    <!-- Add your image here -->
+    <img src="/static/images/believe.jpg" class="img-fluid" alt="My Portfolio">
+  </div>
+</header>
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 id="intro-text" class="text-center mb-4" style="font-family: 'Aptos', sans-serif;">I AM UMESH DAHAL</h2>
+    <div class="row">
+      <!-- Introduction Text (Left Side) -->
+      <div class="col-lg-6 d-flex">
+        <div class="card shadow flex-grow-1">
+          <div class="card-body">
+            <h4 class="card-title"></h4>
+            <p class="card-text" style="font-size: 1.3rem; font-family: 'Aptos', sans-serif; text-align: justify;">
+              I am passionate about data analysis and problem-solving. I am eager to explore the intersection of data and business to drive meaningful insights and strategies.
+            </p>
+            <p class="card-text" style="font-size: 1.3rem; font-family: 'Aptos', sans-serif; text-align: justify;">
+              My academic background in Business Information System has equipped me with the necessary skills in data analysis, statistics, and programming.
+            </p>
+            <p class="card-text" style="font-size: 1.3rem; font-family: 'Aptos', sans-serif; text-align: justify;">
+              I have gained experience in tools like Python, SQL, Power BI, and Excel, and I have experience working on real-world data projects.
+            </p>
+            <p class="card-text" style="font-size: 1.3rem; font-family: 'Aptos', sans-serif; text-align: justify;">
+              Outside of academics, I enjoy staying updated with the latest trends in data science and technology, and I actively seek opportunities to apply my skills in practical scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Picture (Right Side) -->
+      <div class="col-lg-6 d-flex">
+        <div class="card shadow flex-grow-1">
+          <img src="/static/images/me.jpg" class="card-img-top img-fluid" alt="Your Picture">
+        </div>
+      </div>    
+    </div>
+  </div>
+</section>
+<!-- Resume Section -->
+<section id="resume" class="py-5" style="background-color: #ffffff;">
+  <div class="container">
+    <h2 class="text-center mb-4">Resume</h2>
+    <div class="row">
+      <!-- Education -->
+      <div class="col-md-6 d-flex">
+        <div class="card shadow flex-fill">
+          <div class="card-body">
+            <h4 class="card-title">Education</h4>
+            <ul class="card-text" style="font-size: 1.1rem; font-family: 'Aptos', sans-serif;">
+              <li>Bachelor: Frankfurt University of Applied Sciences</li>
+              <li>Preparatory Course: Kiel University of Applied Sciences</li>
+              <li>School: Orchid Public Higher Secondary School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Experience -->
+      <div class="col-md-6 d-flex">
+        <div class="card shadow flex-fill">
+          <div class="card-body">
+            <h4 class="card-title">Experience</h4>
+            <ul class="card-text" style="font-size: 1.1rem; font-family: 'Aptos', sans-serif;">
+              <li>Working Student: Rhein Main Verkehrsverbund</li>
+              <li>Intern: Fraport AG</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Row for CVs -->
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="card-title">CV in English</h4>
+            <p class="card-text" style="font-size: 1.1rem; font-family: 'Aptos', sans-serif;"><a href="/static/pdf/CV.pdf" target="_blank">Download CV (PDF)</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="card-title">CV in German</h4>
+            <p class="card-text" style="font-size: 1.1rem; font-family: 'Aptos', sans-serif;"><a href="/static/pdf/Lebenslauf.pdf" target="_blank">Lebenslauf Herunterladen (PDF)</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Language Section with Animation -->
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="card-title">Languages</h4>
+            <ul class="card-text" id="languageList" style="font-size: 1.2rem;">
+              <li>Native language: Nepali</li>
+              <li>Fluent: English (C1)</li>
+              <li>Proficient: German (B2)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row">
+      <!-- Technical Skills -->
+      <div class="col-md-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="card-title text-center mb-4">Technical Skills</h4>
+            <canvas id="skillsChart" width="100" height="100"></canvas>
+          </div>
+        </div>
+      </div>
+      <!-- Competencies -->
+      <div class="col-md-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="card-title text-center mb-4">Competencies</h4>
+            <canvas id="competenciesChart" width="100" height="100"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 d-flex">
+        <div class="card mb-4 shadow flex-fill">
+          <img src="static/images/web.jpeg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h4 class="card-title">Web Development Project</h4>
+            <div class="text-left">
+              <a href="https://drive.google.com/file/u/0/d/1cNt4y9Ceu-0-C_0vr4jkuAr-LKbySXOM/view?usp=drive_link&pli=1" class="card-link">Pizza Store</a>
+            </div>
+            <div class="text-left">
+              <a href="https://github.com/umesh-dahal/webanwendung" class="card-link">Travel Packages</a>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="card mb-4 shadow flex-fill">
+          <img src="static/images/py.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h4 class="card-title">Python Project</h4>
+            <div class="text-left">
+              <a href="https://github.com/umesh-dahal/bsrn-Password-Manager-" class="card-link">Password Manager</a>
+            </div>  
+            <div class="text-left">
+              <a href="https://iamumesh.pythonanywhere.com/" class="card-link">Django Website</a>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="card mb-4 shadow flex-fill">
+          <img src="static/images/ml.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h4 class="card-title">Machine Learning Project</h4>
+            <div class="text-left">
+              <a href="https://github.com/umesh-dahal/Matching-Algorithmus" class="card-link">Job Matching</a>
+            </div>  
+            <div class="text-left">
+              <a href="https://github.com/umesh-dahal/Matching-Algorithmus" class="card-link">Time Series Python</a>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact</h2>
+    <div class="row">
+      <div class="col-md-4 d-flex">
+        <div class="card rounded mb-4 shadow flex-fill"> <!-- Added 'flex-fill' class -->
+          <div class="card-body text-center"> <!-- Centered the content -->
+            <div class="placeholder rounded-circle d-flex justify-content-center align-items-center"> <!-- Added 'placeholder' class -->
+              <img src="static/images/gmail.png" alt="Envelope Icon" class="icon"> <!-- Custom envelope icon -->
+            </div>
+            <h4 class="card-title mt-3">Gmail</h4>
+            <a href="https://mail.google.com/" class="card-link">1998.dahal.umesh@gmail.com</a> <!-- Changed to a mailto link -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="card rounded mb-4 shadow flex-fill"> <!-- Added 'flex-fill' class -->
+          <div class="card-body text-center"> <!-- Centered the content -->
+            <div class="placeholder rounded-circle d-flex justify-content-center align-items-center"> <!-- Added 'placeholder' class -->
+              <img src="static/images/link.png" alt="LinkedIn Icon" class="icon"> <!-- Custom LinkedIn icon -->
+            </div>
+            <h4 class="card-title mt-3">LinkedIn</h4>
+            <a href="https://www.linkedin.com/" class="card-link">Linkedin</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="card rounded mb-4 shadow flex-fill"> <!-- Added 'flex-fill' class -->
+          <div class="card-body text-center"> <!-- Centered the content -->
+            <div class="placeholder rounded-circle d-flex justify-content-center align-items-center"> <!-- Added 'placeholder' class -->
+              <img src="static/images/what.png" alt="WhatsApp Icon" class="icon"> <!-- Custom WhatsApp icon -->
+            </div>
+            <h4 class="card-title mt-3">Whatsapp</h4>
+            <a href="https://web.whatsapp.com/" class="card-link">+49 163 176 3264</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <p>&copy; 2024 Umesh Dahal. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/static/js/ani_umesh.js"></script>
+  <script src="/static/js/menu_scroll.js"></script>
+  <script src="/static/js/chart_skills_tech.js"></script>
+  <script src="/static/js/chart_skills_comp.js"></script>
+  <script src="/static/js/language_ani.js"></script>
+</body>
+</html>

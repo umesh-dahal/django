@@ -1,0 +1,12 @@
+.navbar.bg {
+  background-color: orange;
+}
+
+
+/* Navbar text color and font weight */
+.navbar-dark .navbar-nav .nav-link {
+color: black;
+font-weight: bold;
+font-family: 'Aptos', sans-serif;
+}
+

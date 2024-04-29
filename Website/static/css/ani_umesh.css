@@ -1,0 +1,21 @@
+/* Hide the text initially */
+#intro-text {
+    opacity: 0;
+  }
+  
+  /* Animation for each letter */
+  .letter {
+    animation: fadeInLetter 0.5s ease forwards;
+    opacity: 0;
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes fadeInLetter {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
